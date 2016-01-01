@@ -11,7 +11,7 @@ void setup() {
 
 float readTemperatureFromAnalog(int pin) {
   // http://www.learningaboutelectronics.com/Articles/LM335-temperature-sensor-circuit.php
-  int rawvoltage = analogRead(A0);
+  int rawvoltage = analogRead(pin);
   float millivolts = (rawvoltage / 1024.0) * 5000;
   float kelvin = (millivolts / 10);
 
